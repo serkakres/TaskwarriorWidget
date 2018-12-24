@@ -120,11 +120,12 @@ update: (output, domEl) ->
 
 
 style: """
-	left: 20px
-	top: 20px
+	right: 0px
+	top: 200px
 	font-family: monospace
 	font-size: 1.1em
 	font-weight: 200
+	text-align: right
 
 	#container
 		border-collapse: collapse
