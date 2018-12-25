@@ -121,7 +121,7 @@ update: (output, domEl) ->
 
 style: """
 	right: 0px
-	top: 200px
+	top: 140px
 	font-family: monospace
 	font-size: 1.1em
 	font-weight: 200
