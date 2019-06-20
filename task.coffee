@@ -38,7 +38,7 @@ update: (output, domEl) ->
 	for task, i in jsonObj
 
 		# Only display the 20 first available tasks
-		if i > 20
+		if i > 30
 			return
 
 		dueDateOffset = 10000  # ridiculously high number to indicate there is no due date
@@ -46,7 +46,7 @@ update: (output, domEl) ->
 		project = ''
 		tags = ''
 		finalString = ''
-		cofAlpha = (i * 0.05) * (-1) + 1 # transparency for this line in the table
+		cofAlpha = (i * 0.033) * (-1) + 1 # transparency for this line in the table
 
 		if task.due != undefined
 			# Task warrior date strings are weirdly formatted
@@ -121,7 +121,7 @@ update: (output, domEl) ->
 
 style: """
 	right: 0px
-	top: 140px
+	top: 100px
 	font-family: monospace
 	font-size: 1.1em
 	font-weight: 200
